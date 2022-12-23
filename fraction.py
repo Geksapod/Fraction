@@ -1,6 +1,5 @@
 """This module provides access to class Fraction."""
 import math
-import decimal
 
 class Fraction:
     """
@@ -31,7 +30,7 @@ class Fraction:
         if self.__denom and not self.__num:
             return 0
         elif self.__denom:
-            return decimal.Decimal(self.__num / self.__denom)
+            return self.__num / self.__denom
 
     def __gt__(self, other):
         if isinstance(other, int):
